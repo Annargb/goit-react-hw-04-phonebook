@@ -42,9 +42,7 @@ export const App = () => {
 
   useEffect(
     prevState => {
-      if (contacts !== prevState) {
-        localStorage.setItem('contacts', JSON.stringify(contacts));
-      }
+      localStorage.setItem('contacts', JSON.stringify(contacts));
     },
     [contacts]
   );
